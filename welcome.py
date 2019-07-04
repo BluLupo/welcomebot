@@ -15,7 +15,7 @@ def error(update, context):
 def main():
     updater = Updater(config.bot_token)
     dp = updater.dispatcher
-    # Qui richiamo le funzioni senza comando, =>handler
+    # Here we call the functions without a command, => handler
     dp.add_handler(MessageHandler(None, handler.init))
     dp.add_error_handler(error)
     updater.start_polling()
