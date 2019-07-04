@@ -5,13 +5,13 @@ import logging
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 import config, handler
 
-# Questo abilita i log
+# log
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 logger = logging.getLogger(__name__)
 def error(update, context):
     logger.warning('Update "%s" genera errore: "%s"', update, context.error)
 
-# Questa è la funzione che inizializza il bot
+# This is the function that initializes the bot
 def main():
     updater = Updater(config.bot_token)
     dp = updater.dispatcher
