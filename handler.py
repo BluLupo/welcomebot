@@ -9,7 +9,7 @@ def welcome(bot, update):
 		update.message.reply_text('Welcome here {username} in {chat_title}'
 			.format(username=update.message.from_user.first_name, chat_title=update.message.chat.title))
 		
-#DICHIARAZIONE FUNZIONI
+#declaration functions
 def init(bot, update):
 	welcome(bot, update)
 	
